@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="tyylit.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title><%= paaotsikko %> </title>
+</head>
+
+<body>
+    <main>
+        <h2><%= otsikko %></h2>
+        <form action="<%= toiminto %>" method="post">   
+        <p>
+            <label for="numero">Kissan numero</label>
+            <input type="text" id="numero" name="numero" 
+            size="5" value="<%= numero.arvo %>"
+                <%= numero.readonly %>>
+        </p>
+        <p>
+            <label for="nimi">Nimi</label>
+            <input type="text" id="nimi" name="nimi" 
+            size="15" value="<%= nimi.arvo %>"
+                <%= nimi.readonly %>>
+        </p>
+        <p>
+            <label for="rotu">Rotu</label>
+            <input type="text" id="rotu" name="rotu" 
+            size="25" value="<%= rotu.arvo %>"
+                <%= rotu.readonly %>>
+        </p>
+        <p>
+            <label for="syntymavuosi">Syntymävuosi</label>
+            <input type="text" id="syntymavuosi" name="syntymavuosi" 
+            size="10" value="<%= syntymavuosi.arvo %>"
+             <%= syntymavuosi.readonly %>>
+        </p>
+        <p>
+            <label for="lukumaara">Lukumäärä</label>
+            <input type="text" id="lukumaara" name="lukumaara"
+            size="10" value="<%= lukumaara.arvo %>"
+             <%= lukumaara.readonly %>>
+        </p>
+        <button type="submit">Lähetä</button>
+    </form>
+    </main>
+    <br>
+    <a href="/"><button>Valikko</button></a>
+
+</body>
+
+</html>

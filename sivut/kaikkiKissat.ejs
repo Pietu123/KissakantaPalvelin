@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="utf-8">
+    <title>Kaikki kissat</title>
+    <link rel="stylesheet" href="tyylit.css">
+
+
+</head>
+<body>
+    <main>
+
+        <h2>Kaikki kissat</h2>
+        <br>
+        <table id="kissat">
+            <thead>
+                <tr>
+                    <th>Numero</th>
+                    <th>Nimi</th>
+                    <th>Rotu</th>
+                    <th>Syntymavuosi</th>
+                    <th>Lukumaara</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% tulos.forEach(kissa=>{ %>
+                    <tr>
+                        <td><%= kissa.numero %></td>
+                        <td><%= kissa.nimi %></td>
+                        <td><%= kissa.rotu  %></td>
+                        <td><%= kissa.syntymavuosi %></td>
+                        <td><%= kissa.lukumaara %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+
+    </main>
+    <a href="/"><button>Valikko</button></a>
+</body>
+</html>

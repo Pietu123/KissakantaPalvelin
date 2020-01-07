@@ -1,0 +1,35 @@
+{
+    "palvelin":"localhost",
+    "portti":3306,
+    "paakayttaja":"root",
+    "paakayttajanSalasana":"",
+    "kayttaja":"sampo",
+    "kayttajanSalasana":"kegQw0VU",
+    "poistaKayttaja:" : false,
+    "debugKaytossa":true,
+    "tietokanta":"kissatietokanta",
+    "taulut": [
+        {
+            "taulunNimi":"kissa",
+            "sarakkeet": [
+                "numero integer not null primary key ",
+                "nimi varchar(10) not null",
+                "rotu varchar(22) not null",
+                "syntymavuosi integer not null",
+                "lukumaara integer not null" 
+
+
+            ],
+            "tiedot": [
+                [1,"Täplä","Burma", 2015, 4],
+                [2, "Musta","Siamilainen", 2016, 3]
+
+            ]
+        
+    
+        }
+
+
+    ]
+
+}

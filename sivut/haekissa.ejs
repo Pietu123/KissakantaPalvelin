@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="utf-8">
+    <title><%= paaotsikko %></title>
+    <link rel="stylesheet" href="tyylit.css">
+
+</head>
+
+<body>
+    <main>
+        <h2><%= otsikko %></h2>
+        <form action="<%= toiminto %>" method="post">
+            <p>
+                <label for="numero">Kissan Numero</label>
+                <input type="text" id="numero" name="numero" size="5">
+            </p>
+            <button type="submit">Lähetä</button>
+        </form>
+    </main>
+    <br>
+    <a href="/"><button>Valikko</button></a>
+</body>
+
+</html>
